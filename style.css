@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.task-app {
+  background: white;
+  width: 450px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.inputs, .filters {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li .btns button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+li .done-btn {
+  background: #2196F3;
+}
+li .done-btn:hover {
+  background: #1976d2;
+}
+li .undo-btn {
+  background: #FF9800;
+}
+li .undo-btn:hover {
+  background: #e68900;
+}
+li .delete-btn {
+  background: #f44336;
+}
+li .delete-btn:hover {
+  background: #d32f2f;
+}
+
+.progress {
+  margin-top: 15px;
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+  height: 25px;
+}
+
+#progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  width: 0%;
+  border-radius: 10px;
+}
+
+#progressText {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #000;
+  line-height: 25px;
+}
